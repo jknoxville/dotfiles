@@ -8,3 +8,5 @@
 	email = knoxjohn@amazon.com
 [branch]
 	autosetuprebase = always
+[push]
+	default = simple
