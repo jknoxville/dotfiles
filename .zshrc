@@ -20,5 +20,5 @@ export EDITOR=vi
 alias zshrc="$EDITOR ~/.zshrc"
 
 ### Work Config
-source amazon/.amazon.zshrc.sh
+source ~/dotfiles/amazon/.amazon.zshrc.sh
 
