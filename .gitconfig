@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+#	user = knoxjohn
+#	email = knoxjohn@amazon.com
+[user]
+	name = John Knox
+	email = knoxjohn@amazon.com
+[branch]
+	autosetuprebase = always
