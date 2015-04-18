@@ -16,6 +16,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 export EDITOR=vi
 
+# vim-style keybindings
+set -o vi
+
 # Aliases
 alias zshrc="$EDITOR ~/.zshrc"
 
