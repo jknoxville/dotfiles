@@ -21,6 +21,7 @@ set -o vi
 
 # Aliases
 alias zshrc="$EDITOR ~/.zshrc"
+alias sz="source ~/.zshrc"
 
 ### Work Config
 source ~/dotfiles/amazon/.amazon.zshrc.sh
