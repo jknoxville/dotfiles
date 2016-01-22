@@ -11,8 +11,12 @@
 [push]
 	default = simple
 [color]
-	ui = auto
+	ui = true
 [core]
 	pager = less -FMRiX
 [alias]
 	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+        s = status
+[amazon]
+	append-cr-url = true
+	pull-request-by-default = true
