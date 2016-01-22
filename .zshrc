@@ -18,6 +18,8 @@ export EDITOR=vi
 
 # vim-style keybindings
 set -o vi
+# vim bindings don't enable Ctrl-R by default. Re-enable it.
+bindkey "^R" history-incremental-search-backward
 
 # Aliases
 alias zshrc="$EDITOR ~/.zshrc"
