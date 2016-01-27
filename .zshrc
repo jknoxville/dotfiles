@@ -1,14 +1,15 @@
 ### Oh-my-zsh Config
+# Commented out by default
 
-export ZSH=/Users/knoxjohn/.oh-my-zsh
+# export ZSH=/Users/knoxjohn/.oh-my-zsh
 
-ZSH_THEME="jknognoster"        # Oh-my-zsh theme
-export UPDATE_ZSH_DAYS=14      # Oh-my-zsh auto-update frequency 
-COMPLETION_WAITING_DOTS="true" # Show auto-complete status indicator
-HIST_STAMPS="yyyy-mm-dd"       # HISTORY timestamp format
-plugins=(git)                  # Oh-my-zsh plugins
+# ZSH_THEME="jknognoster"        # Oh-my-zsh theme
+# export UPDATE_ZSH_DAYS=14      # Oh-my-zsh auto-update frequency 
+# COMPLETION_WAITING_DOTS="true" # Show auto-complete status indicator
+# HIST_STAMPS="yyyy-mm-dd"       # HISTORY timestamp format
+# plugins=(git)                  # Oh-my-zsh plugins
 
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
 ### Personal Config
 
