@@ -43,3 +43,5 @@ if [ -f "$workconfig" ]; then
   source "$workconfig"
 fi
 
+# Include quick file completion
+[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
