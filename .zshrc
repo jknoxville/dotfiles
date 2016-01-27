@@ -31,5 +31,5 @@ alias gettime='date +%s'
 alias gbc='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 
 ### Work Config
-source ~/dotfiles/amazon/.amazon.zshrc.sh
+source ~/dotfiles/amazon/amazon.zshrc
 
