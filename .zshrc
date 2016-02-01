@@ -30,6 +30,7 @@ alias zshrc="$EDITOR ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias pwgen="openssl rand -base64 15"
 alias gettime='date +%s'
+alias ta="tmux attach || tmux"
 
 # Delete branches that are merged into HEAD
 alias gbc='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
