@@ -17,6 +17,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 export EDITOR=vi
 
+# Start up ssh-agent
+eval `ssh-agent -s`
+
 # vim-style keybindings
 set -o vi
 # vim bindings don't enable Ctrl-R by default. Re-enable it.
