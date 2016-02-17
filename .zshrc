@@ -37,6 +37,8 @@ alias gbc='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | x
 
 ### Work Config
 workconfig=~/dotfiles/amazon/amazon.zshrc
-alias amazon.zshrc="$EDITOR $workconfig"
-source "$workconfig"
+if [ -d "$workconfig" ]; then
+  alias amazon.zshrc="$EDITOR $workconfig"
+  source "$workconfig"
+fi
 
