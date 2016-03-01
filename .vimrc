@@ -4,6 +4,11 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" Nicer tab navigation
+nnoremap tj  :tabnext<CR>
+nnoremap tk  :tabprev<CR>
+nnoremap tt  :tabedit<Space>
+
 " Allow writing after opening without sudo
 cmap w!! w !sudo tee > /dev/null %
 
