@@ -15,6 +15,15 @@ cmap w!! w !sudo tee > /dev/null %
 " Use Vim settings rather than Vi settings
 set nocompatible
 
+" Vundle compatibility
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'rust-lang/rust.vim'
+call vundle#end()
+filetype plugin indent on
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -34,12 +43,6 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
