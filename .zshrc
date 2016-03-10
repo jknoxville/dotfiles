@@ -15,7 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-export EDITOR=vi
+export EDITOR=vim
 
 # Start up ssh-agent
 eval `ssh-agent -s`
@@ -31,6 +31,7 @@ alias sz="source ~/.zshrc"
 alias pwgen="openssl rand -base64 15"
 alias gettime='date +%s'
 alias ta="tmux attach || tmux"
+alias vi="vim"
 
 # Delete branches that are merged into HEAD
 alias gbc='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
