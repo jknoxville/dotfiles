@@ -3,7 +3,7 @@
 
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="robbyrussell"        # Oh-my-zsh theme
+ZSH_THEME="jknognoster"        # Oh-my-zsh theme
 export UPDATE_ZSH_DAYS=14      # Oh-my-zsh auto-update frequency 
 COMPLETION_WAITING_DOTS="true" # Show auto-complete status indicator
 HIST_STAMPS="yyyy-mm-dd"       # HISTORY timestamp format
@@ -30,7 +30,7 @@ alias zshrc="$EDITOR ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias pwgen="openssl rand -base64 15"
 alias gettime='date +%s'
-alias ta="tmux attach || tmux"
+alias ta="tmux -CC attach || tmux -CC" # -CC gives you native terminal support (iTerm2)
 alias vi="vim"
 
 # Delete branches that are merged into HEAD
