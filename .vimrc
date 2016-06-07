@@ -9,6 +9,12 @@ nnoremap tj  :tabnext<CR>
 nnoremap tk  :tabprev<CR>
 nnoremap tt  :tabedit<Space>
 
+" Ctrl-[hjkl] to move around splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
+
 " Allow writing after opening without sudo
 cmap w!! w !sudo tee > /dev/null %
 
