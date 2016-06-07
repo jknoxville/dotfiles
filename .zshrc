@@ -3,7 +3,15 @@
 
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="jknognoster"        # Oh-my-zsh theme
+# Custom theme only looks good with decent UI support.
+# When that is available add a .use-custom-oh-my-zsh-theme file to $HOME
+# to enable it, otherwise use the default.
+if [ -f ~/.use-custom-oh-my-zsh-theme ]; then
+    ZSH_THEME="jknognoster"
+else;
+    ZSH_THEME="robbyrussell"
+fi;
+
 export UPDATE_ZSH_DAYS=14      # Oh-my-zsh auto-update frequency 
 COMPLETION_WAITING_DOTS="true" # Show auto-complete status indicator
 HIST_STAMPS="yyyy-mm-dd"       # HISTORY timestamp format
