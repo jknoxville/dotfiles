@@ -26,7 +26,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'rust-lang/rust.vim'
+Plugin 'ctrlpvim/ctrlp.vim' " Fuzzy file opening
+Plugin 'rust-lang/rust.vim' " Syntax highlighting
 call vundle#end()
 filetype plugin indent on
 
