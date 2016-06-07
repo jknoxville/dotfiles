@@ -27,6 +27,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim' " Fuzzy file opening
+Plugin 'vim-airline/vim-airline' " Status bar
 Plugin 'rust-lang/rust.vim' " Syntax highlighting
 call vundle#end()
 filetype plugin indent on
@@ -81,5 +82,5 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+          \ | wincmd p | diffthis
 endif
