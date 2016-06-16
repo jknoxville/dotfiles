@@ -53,3 +53,10 @@ fi
 
 # Include quick file completion
 [[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
+
+# Open the latest (last modified) file with matching prefix
+# E.g. latest tail -f myLogFile
+latest () {
+    $@[0,-2] $@[-1]*(om[1])
+}
+
