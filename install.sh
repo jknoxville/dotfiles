@@ -2,23 +2,28 @@
 set -o nounset
 set -o errexit
 
+function archive {
+    if [ -f $1 ];
+        then mv ~/$1 ~/dotfiles/$1.old && echo "Existing $1 moved to ~/dotfiles/$1.old";
+    fi
+}
+
+function replace {
+    archive $1
+    echo "Symlinking $1"
+    ln -sf ~/dotfiles/$1 ~/$1
+}
+
 echo "Installing custom theme. You need a powerline font for this, like Meslo LG M DZ Regular for Powerline"
 echo "Good colour schemes are SolarizedDark, and BirdsOfParadise"
-ln -s ~/dotfiles/oh-my-zsh/jknognoster.zsh-theme ~/.oh-my-zsh/themes/
+ln -sf ~/dotfiles/oh-my-zsh/jknognoster.zsh-theme ~/.oh-my-zsh/themes/
 
-if [ -f ~/.zshrc ];
-then mv ~/.zshrc ~/dotfiles/.zshrc.old && echo "Existing .zshrc moved to ~/dotfiles/.zshrc.old";
-fi
+replace .zshrc
+replace .vimrc
 
-echo "Symlinking .zshrc"
-ln -s ~/dotfiles/.zshrc ~/.zshrc 
-
-echo "Symlinking .vimrc"
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-
-if [ ! -f ~/.vim/bundle/Vundle.vim ];
-echo "Installing vundle"
-then git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
+    echo "Installing vundle"
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 echo ""
