@@ -3,27 +3,32 @@ set -o nounset
 set -o errexit
 
 function archive {
-    if [ -f $1 ];
+    if [ -f ~/$1 ];
         then mv ~/$1 ~/dotfiles/$1.old && echo "Existing $1 moved to ~/dotfiles/$1.old";
     fi
 }
 
 function replace {
-    archive $1
-    echo "Symlinking $1"
-    ln -sf ~/dotfiles/$1 ~/$1
+    if [ -L ~/$1 ] && [ $(readlink -f ~/$1) = ~/dotfiles/$1 ]; then
+        echo "Already up to date: $1."
+    else
+        archive $1
+        echo "Symlinking $1"
+        ln -sf ~/dotfiles/$1 ~/$1
+    fi
 }
 
-echo "Installing custom theme. You need a powerline font for this, like Meslo LG M DZ Regular for Powerline"
-echo "Good colour schemes are SolarizedDark, and BirdsOfParadise"
-ln -sf ~/dotfiles/oh-my-zsh/jknognoster.zsh-theme ~/.oh-my-zsh/themes/
-
+# Installing custom theme. You need a powerline font for this, like Meslo LG M DZ Regular for Powerline
+# Good colour schemes are SolarizedDark, and BirdsOfParadise"
+replace .oh-my-zsh/themes/jknognoster.zsh-theme
 replace .zshrc
 replace .vimrc
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     echo "Installing vundle"
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+else
+    echo "Already installed: Vundle"
 fi
 
 echo ""
