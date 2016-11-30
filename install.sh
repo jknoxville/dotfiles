@@ -16,5 +16,10 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 echo "Symlinking .vimrc"
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 
+if [ ! -f ~/.vim/bundle/Vundle.vim ];
+echo "Installing vundle"
+then git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
+
 echo ""
 echo "All done"
