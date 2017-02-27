@@ -14,7 +14,8 @@ fi;
 
 export UPDATE_ZSH_DAYS=14      # Oh-my-zsh auto-update frequency 
 COMPLETION_WAITING_DOTS="true" # Show auto-complete status indicator
-HIST_STAMPS="yyyy-mm-dd"       # HISTORY timestamp format
+HISTSIZE=100000
+SAVEHIST=1000000000
 plugins=(git)                  # Oh-my-zsh plugins
 
 source $ZSH/oh-my-zsh.sh
