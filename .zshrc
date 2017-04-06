@@ -75,3 +75,5 @@ zstyle ':completion:*' matcher-list '' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
+# Shift-TAB to go backwards in the autocomplete menu
+bindkey '^[[Z' reverse-menu-complete
