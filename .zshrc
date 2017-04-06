@@ -61,3 +61,8 @@ latest () {
     $@[0,-2] $@[-1]*(om[1])
 }
 
+# Autojump ( https://github.com/wting/autojump )
+# Usage: j <DIR>
+#        jc <CHILD DIR>
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
