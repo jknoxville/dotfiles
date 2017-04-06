@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Personal Config
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin"
 
 export EDITOR=vim
 
