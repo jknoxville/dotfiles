@@ -9,7 +9,7 @@ function archive {
 }
 
 function replace {
-    if [ -L ~/$1 ] && [ $(readlink -f ~/$1) = ~/dotfiles/$1 ]; then
+    if [ -L ~/$1 ] && [ $(readlink ~/$1) = ~/dotfiles/$1 ]; then
         echo "Already up to date: $1."
     else
         archive $1
