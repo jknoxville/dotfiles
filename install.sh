@@ -23,6 +23,7 @@ function replace {
 replace .oh-my-zsh/themes/jknognoster.zsh-theme
 replace .zshrc
 replace .vimrc
+replace .tmux.conf
 
 if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     echo "Installing vundle"
