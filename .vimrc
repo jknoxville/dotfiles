@@ -41,6 +41,7 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set expandtab           " use spaces instead of tabs
 set tabstop=4           " 1 tab = 4 spaces
+set shiftwidth=4 " Indents are 4 spaces
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
