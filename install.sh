@@ -19,7 +19,7 @@ function replace {
 }
 
 # Installing custom theme. You need a powerline font for this, like Meslo LG M DZ Regular for Powerline
-# Good colour schemes are SolarizedDark, and BirdsOfParadise"
+# Good colour schemes are SolarizedDark, and BirdsOfParadise
 replace .oh-my-zsh/themes/jknognoster.zsh-theme
 replace .zshrc
 replace .vimrc
