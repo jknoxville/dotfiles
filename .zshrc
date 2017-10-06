@@ -64,7 +64,7 @@ latest () {
 # Autojump ( https://github.com/wting/autojump )
 # Usage: j <DIR>
 #        jc <CHILD DIR>
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 # 0 -- vanilla completion (abc => abc)
 # # 1 -- smart case completion (abc => Abc)
