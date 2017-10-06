@@ -166,9 +166,15 @@ prompt_status() {
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
 
+prompt_host() {
+  prompt_segment black default "$HUMAN_HOSTNAME"
+}
+
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
+  prompt_host
   prompt_status
   prompt_virtualenv
   prompt_dir
