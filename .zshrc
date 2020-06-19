@@ -35,7 +35,7 @@ set -o vi
 bindkey "^R" history-incremental-search-backward
 
 # Aliases
-alias zshrc="$EDITOR ~/.zshrc"
+alias zc="$EDITOR ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias pwgen="openssl rand -base64 15"
 alias gettime='date +%s'
