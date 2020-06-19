@@ -24,6 +24,7 @@ replace .oh-my-zsh/themes/jknognoster.zsh-theme
 replace .zshrc
 replace .vimrc
 replace .tmux.conf
+replace .autojump
 
 echo ""
 echo "All done"

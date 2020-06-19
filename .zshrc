@@ -61,10 +61,9 @@ latest () {
     $@[0,-2] $@[-1]*(om[1])
 }
 
-# Autojump ( https://github.com/wting/autojump )
-# Usage: j <DIR>
-#        jc <CHILD DIR>
-# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[[ -s /Users/jknox/.autojump/etc/profile.d/autojump.sh ]] && source /Users/jknox/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
 
 # 0 -- vanilla completion (abc => abc)
 # # 1 -- smart case completion (abc => Abc)
@@ -75,5 +74,3 @@ zstyle ':completion:*' matcher-list '' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
-# Shift-TAB to go backwards in the autocomplete menu
-bindkey '^[[Z' reverse-menu-complete
