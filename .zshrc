@@ -41,6 +41,7 @@ alias pwgen="openssl rand -base64 15"
 alias gettime='date +%s'
 alias ta="tmux -CC attach || tmux -CC" # -CC gives you native terminal support (iTerm2)
 alias vi="vim"
+alias mp="mkdir -p"
 
 # Delete branches that are merged into HEAD
 alias gbc='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
