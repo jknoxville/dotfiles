@@ -70,3 +70,13 @@ else
 
 endif " has("autocmd")
 
+" Better command-line completion
+set wildmenu
+
+" Show partial commands in the last line of the screen
+set showcmd
+
+" Use case insensitive search, except when using capital letters
+set ignorecase
+set smartcase
+
