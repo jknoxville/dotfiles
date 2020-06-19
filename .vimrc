@@ -80,8 +80,12 @@ set showcmd
 set ignorecase
 set smartcase
 
-" vim-airline plugin:
+" vim-airline plugin (added to ~/.vim/pack/dist/start/ )
 " Enable powerline symbols in vim-airline
 let g:airline_powerline_fonts = 1
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
+
+" Enable  CtrlP plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+

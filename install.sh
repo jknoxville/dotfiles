@@ -26,10 +26,17 @@ replace .vimrc
 replace .tmux.conf
 
 if [ -d ~/.vim/pack/dist/start/vim-airline ]; then
-    echo "vim-airline already installed";
+    echo "Already installed: vim-airline";
 else
     echo "Installing  vim-airline"
     git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
+fi
+
+if [ -d ~/.vim/bundle/ctrlp.vim ]; then
+    echo "Already installed: vim Ctrl-P"
+else
+    echo "Installing Vim Ctrl-P"
+    git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 fi
 
 echo ""
