@@ -25,5 +25,12 @@ replace .zshrc
 replace .vimrc
 replace .tmux.conf
 
+if [ -d ~/.vim/pack/dist/start/vim-airline ]; then
+    echo "vim-airline already installed";
+else
+    echo "Installing  vim-airline"
+    git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
+fi
+
 echo ""
 echo "All done"

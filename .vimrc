@@ -80,3 +80,5 @@ set showcmd
 set ignorecase
 set smartcase
 
+" Enable powerline symbols in vim-airline
+let g:airline_powerline_fonts = 1
