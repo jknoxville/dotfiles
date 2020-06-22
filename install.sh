@@ -29,6 +29,7 @@ if [ -d ~/.vim/pack/dist/start/vim-airline ]; then
     echo "Already installed: vim-airline";
 else
     echo "Installing  vim-airline"
+    mkdir -p ~/.vim/pack/dist/start
     git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
 fi
 
