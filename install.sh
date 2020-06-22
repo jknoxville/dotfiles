@@ -22,6 +22,7 @@ function replace {
 # Good colour schemes are SolarizedDark, and BirdsOfParadise
 replace .oh-my-zsh/themes/jknognoster.zsh-theme
 replace .zshrc
+replace .zprofile
 replace .vimrc
 replace .tmux.conf
 
